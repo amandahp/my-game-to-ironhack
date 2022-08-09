@@ -42,20 +42,25 @@ export const css = `
     transform: translateY(-2px);
   }
 
+  button:hover {
+    width: 230px;
+    height: 80px;
+  }
+
   .easy-btn {
     background:hsl(121deg, 100%, 32%);
   }
-
   .easy-btn span {
-
     background: hsl(125deg, 100%, 47%);
   }
+
   .medium-btn {
     background: hsl(60deg, 100%, 32%);
   }
   .medium-btn span {
     background: hsl(60deg, 100%, 47%);
   }
+  
   .expert-btn {
     background: hsl(340deg 100% 32%);
   }

@@ -1,7 +1,7 @@
 import { template } from './template.js'
 import '../roullete/index.js'
 
-class Difficulty extends HTMLElement {
+class PlayGame extends HTMLElement {
   constructor() {
     super()
     this.attachShadow({ mode: 'open' })
@@ -23,4 +23,4 @@ class Difficulty extends HTMLElement {
 
 }
 
-customElements.define('difficulty-btn', Difficulty);
+customElements.define('play-game', PlayGame);

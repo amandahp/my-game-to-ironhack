@@ -46,7 +46,7 @@ export const css = `
     transform: rotate(90deg);
   }
   .fill_2::after {
-    background: var(--four-color);
+    background: var(--two-color);
   }
   .fill_3 {
     transform: rotate(135deg);
@@ -185,7 +185,7 @@ export const css = `
     font-family: 'Coiny', cursive;
     background: var(--grey);
   }
-  
+
   .span-button {
     display: block;
     padding: 12px 42px;
