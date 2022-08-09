@@ -7,12 +7,12 @@ export const css = `
     align-items: center;
   }
   .roullete {
-    margin-bottom: 10px ;
+    margin-bottom: 40px ;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background:#C7FFD8;
-    border: 1px solid var(--brown);
+    background: var(--blue);
+    border: 1px solid var(--grey);
     box-shadow: var(--box-shadow);
     position: relative;
   }
@@ -46,19 +46,19 @@ export const css = `
     transform: rotate(90deg);
   }
   .fill_2::after {
-    background: var(--five-color);
+    background: var(--four-color);
   }
   .fill_3 {
     transform: rotate(135deg);
   }
   .fill_3::after {
-    background: var(--two-color);
+    background: var(--five-color);
   }
   .fill_4 {
     transform: rotate(225deg);
   }
   .fill_4::after {
-    background: var(--six-color);
+    background: var(--red);
   }
   .fill_5 {
     transform: rotate(270deg);
@@ -89,16 +89,19 @@ export const css = `
     transform: rotate(180deg);
   }
   .content {
-    font-size: 1rem;
+    font-size: .8rem;
     padding-top: 20px;
     height: 280px;
     position: absolute;
     width: 100%;
     text-align: center;
+    font-family: 'Coiny', cursive;
+    color: white;
   }
   .content_1 {
     transform: rotate(22deg);
   }
+
   .content_2 {
     transform: rotate(67deg);
   }
@@ -127,35 +130,78 @@ export const css = `
     justify-content: center;
     width: 300px;
     height: 300px;
-    background-color: var(--one-color);
+    background-color: var(--ligth-grey);
     margin-bottom: 10px;
     font-size: 2rem;
     border-radius: 40px;
     box-shadow: var(--box-shadow);
-    text-transform: uppercase ;
-  }
-  
-  .trigger {
-    width: 230px;
-    height: 85px;
-    border-radius: 100px;
-    border: 0px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    cursor: pointer; --three-color
-    color: var(--brown);
-    background: var(--seven-color);
-    box-shadow: var(--box-shadow);
-    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Coiny', cursive;
+    animation: myAnim 2s ease 0s 1 normal forwards;
   }
 
-  .trigger:hover {
-    opacity: .8;
-    width: 250px;
-    height: 95px;
-    font-size: 1.8rem;
+  @keyframes myAnim {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  button {
+    width: 220px;
+    height: 75px;
+    border-radius: 30px;
+    outline-offset: 4px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Coiny', cursive;
+    background: var(--grey);
   }
   
+  .span-button {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 2rem;
+    transform: translateY(-6px);
+    height: 40px;
+    outline-offset: 4px;
+    color: white;
+    background: var(--ligth-grey);
+  }
+
+  button:active .span-button {
+    transform: translateY(-2px);
+  }
+
   @keyframes rotation {
     from {
       transform: rotate(0deg);

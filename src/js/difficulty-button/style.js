@@ -2,7 +2,7 @@ export const css = `
 <style>
   * {
     font-size: 2.5rem;
-    color: var(--brown);
+    color: var(--grey);
   }
 
   .difficulty-section {
@@ -15,39 +15,51 @@ export const css = `
   }
 
   button {
-    width: 230px;
-    height: 85px;
-    border-radius: 10px;
-    border: 0px;
+    width: 220px;
+    height: 75px;
+    border-radius: 15px;
+    outline-offset: 4px;
+    border: none;
+    padding: 0;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    box-shadow: var(--box-shadow);
+    font-family: 'Coiny', cursive;
   }
 
-  button:hover {
-    width: 240px;
-    height: 95px;
-    font-size: 2.5rem;
+  span {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 2rem;
+    transform: translateY(-6px);
+    height: 50px;
+    outline-offset: 4px;
+  }
+
+  button:active span {
+    transform: translateY(-2px);
   }
 
   .easy-btn {
-    background: var(--green);
+    background:hsl(121deg, 100%, 32%);
   }
-  .easy-btn:hover {
-    background: rgba(0, 255, 3, 0.5);
+
+  .easy-btn span {
+
+    background: hsl(125deg, 100%, 47%);
   }
   .medium-btn {
-    background: var(--yellow);
+    background: hsl(60deg, 100%, 32%);
   }
-  .medium-btn:hover{
-    background: rgba(255, 255, 0, 0.5);
+  .medium-btn span {
+    background: hsl(60deg, 100%, 47%);
   }
   .expert-btn {
-    background: var(--red);
+    background: hsl(340deg 100% 32%);
   }
-  .expert-btn:hover{
-    background: rgba(255, 0, 0, 0.5);
+  .expert-btn span{
+    background: hsl(345deg 100% 47%);
   }
 </style>`

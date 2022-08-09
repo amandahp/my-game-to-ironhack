@@ -21,11 +21,11 @@ template.innerHTML += `
       <div class="line line_4"></div>
       ${subjects.map((subject, index) => {
         return (
-          `<div class="content content_${index+1}">${subject}</div>`
+          `<div class="content content_${index+1}"><span>${subject}</span></div>`
         )
       }).join('')}
     </div>
-    <div class="draw-subject"></div>
-    <button class="trigger">DRAW A SUBJECT</button>
+    <div class="draw-subject"><span></span></div>
+    <button class="trigger"><span class="span-button">Draw</span></button>
   </div>
 `

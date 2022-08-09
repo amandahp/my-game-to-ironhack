@@ -27,7 +27,7 @@ class Roullete extends HTMLElement {
   draw(drawSubject) {
     this.shadowRoot.querySelector('.roullete').style.display = "none"
     this.shadowRoot.querySelector('.draw-subject').style.display = "flex"
-    this.shadowRoot.querySelector('.draw-subject').innerHTML = drawSubject
+    this.shadowRoot.querySelector('.draw-subject span').innerHTML = drawSubject
     this.shadowRoot.querySelector('.trigger').style.display = "none"
   }
   
