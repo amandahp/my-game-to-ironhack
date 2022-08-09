@@ -1,0 +1,1 @@
+export const subjects = new Array('Math', 'Biology', 'Celebrity', 'Music', 'Films & TV Shows', 'Geography', 'History', 'Curiosity')
