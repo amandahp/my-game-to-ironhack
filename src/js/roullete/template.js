@@ -1,10 +1,12 @@
 import {css} from './style.js'
+import {cssButton} from '../styles/index.js'
 import {subjects} from '../../data/index.js'
 
 
 export const template = document.createElement('template')
 template.innerHTML += `
   ${css}
+  ${cssButton}
   <div class="container">
     <div class="roullete">
       <div class="fill fill_1"></div>
@@ -26,6 +28,6 @@ template.innerHTML += `
       }).join('')}
     </div>
     <div class="draw-subject"><span></span></div>
-    <button class="trigger"><span class="span-button">Draw</span></button>
+    <button class="trigger"><span class="button-span"">Draw</span></button>
   </div>
 `
