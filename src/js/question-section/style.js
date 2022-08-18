@@ -18,6 +18,7 @@ export const css = `<style>
     margin-top: 10px;
     margin-bottom: 10px;
     background: var(--ligth-grey);
+    padding: 10px;
     
   }
 
@@ -26,6 +27,34 @@ export const css = `<style>
     font-size: 1rem;
     color: white;
     background: var(--gaisboro) ;
+  }
+
+  .question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    width: 200px;
+  }
+
+  .life-section {
+    background: var(--ligth-grey);
+    width: 80px;
+    height: 30px;
+    border-radius: 40px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .life {
+    color: red;
+    padding: 3px;
   }
   
 </style>`

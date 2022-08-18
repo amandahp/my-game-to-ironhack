@@ -95,7 +95,6 @@ export const css = `
     position: absolute;
     width: 100%;
     text-align: center;
-    font-family: 'Coiny', cursive;
     color: white;
   }
   .content_1 {
@@ -137,7 +136,6 @@ export const css = `
     box-shadow: var(--box-shadow);
     text-transform: uppercase;
     color: white;
-    font-family: 'Coiny', cursive;
     animation: myAnim 2s ease 0s 1 normal forwards;
   }
 

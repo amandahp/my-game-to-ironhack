@@ -11,7 +11,6 @@ export const cssButton = `
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    font-family: 'Coiny', cursive;
   }
 
   .button-span {
@@ -23,6 +22,7 @@ export const cssButton = `
     height: 50px;
     outline-offset: 4px;
     color: white;
+    font-family: 'Coiny', cursive;
   }
 
   button:active .button-span {
