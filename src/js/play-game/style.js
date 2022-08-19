@@ -11,9 +11,9 @@ export const css = `
     justify-content: space-around;
     align-items:center;
     align-content: center;
-    height: 400px;
+    height: 500px;
   }
-  
+
   .easy-btn {
     background:hsl(121deg, 100%, 32%);
   }
