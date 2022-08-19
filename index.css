@@ -13,14 +13,15 @@
   --blue: #03045e;
   --grey: #353535;
   --ligth-grey: #475B5A;
+  --gaisboro: #C0C0C0;	
 }
-
 
 *{  
   Margin:0;  
   Padding:0;
   Border:0;
   font-size: 12px;
+  font-family: 'Coiny', cursive;
 }
 
 body {
@@ -32,4 +33,6 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+
 

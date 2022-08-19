@@ -95,7 +95,6 @@ export const css = `
     position: absolute;
     width: 100%;
     text-align: center;
-    font-family: 'Coiny', cursive;
     color: white;
   }
   .content_1 {
@@ -137,7 +136,6 @@ export const css = `
     box-shadow: var(--box-shadow);
     text-transform: uppercase;
     color: white;
-    font-family: 'Coiny', cursive;
     animation: myAnim 2s ease 0s 1 normal forwards;
   }
 
@@ -171,37 +169,6 @@ export const css = `
     }
   }
 
-  button {
-    width: 220px;
-    height: 75px;
-    border-radius: 30px;
-    outline-offset: 4px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    font-family: 'Coiny', cursive;
-    background: var(--grey);
-  }
-
-  .span-button {
-    display: block;
-    padding: 12px 42px;
-    border-radius: 12px;
-    font-size: 2rem;
-    transform: translateY(-6px);
-    height: 40px;
-    outline-offset: 4px;
-    color: white;
-    background: var(--ligth-grey);
-  }
-
-  button:active .span-button {
-    transform: translateY(-2px);
-  }
-
   @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -209,6 +176,15 @@ export const css = `
     to {
       transform: rotate(4045deg);
     }
+  }
+
+  button {
+    background: var(--grey);
+  }
+
+  .button-span {
+    background: var(--ligth-grey);
+    font-size: 2rem;
   }
 
 </style>
