@@ -1,5 +1,5 @@
 import { template } from './template.js'
-import { subjects, questions } from '../../data/index.js'
+import { questions } from '../../data/index.js'
 import '../end-game/index.js'
 
 class QuestionSection extends HTMLElement {

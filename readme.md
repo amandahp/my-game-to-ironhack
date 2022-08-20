@@ -1,4 +1,4 @@
-# QUESTIONS & ANSWERS
+# QUESTIONS and ANSWERS
 
 How to play the game?
  1. select the difficulty fot the game;	
